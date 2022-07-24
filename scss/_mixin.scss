@@ -1,0 +1,22 @@
+/* 變數-文字大小 */
+$fs-s: 16px;
+$fs-m: $fs-s * 1.25;
+$fs-l: $fs-s * 1.5;
+$fs-xl: $fs-s * 4;
+$fs-xxl: $fs-s * 5;
+
+/* 變數-行距 */
+$lh-1: 1;
+$lh-xs: $lh-1 * 1.3125;
+$lh-s: $lh-1 * 1.325;
+$lh-m: $lh-1 * 1.5;
+$lh-l: $lh-1 * 1.75;
+$lh-xl: $lh-1 * 2.1;
+
+/* circle */
+@mixin circle($size, $bgcolor){
+  width: $size;
+  height: $size;
+  background: $bgcolor;
+  border-radius: 50%;
+}
