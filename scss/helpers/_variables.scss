@@ -12,11 +12,3 @@ $lh-s: $lh-1 * 1.325;
 $lh-m: $lh-1 * 1.5;
 $lh-l: $lh-1 * 1.75;
 $lh-xl: $lh-1 * 2.1;
-
-/* circle */
-@mixin circle($size, $bgcolor){
-  width: $size;
-  height: $size;
-  background: $bgcolor;
-  border-radius: 50%;
-}

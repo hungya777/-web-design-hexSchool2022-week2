@@ -1,0 +1,24 @@
+/* 文字-粗體 */
+.fw{
+  &-medium{
+    font-weight: 500;
+  }
+  &-bold{
+    font-weight: 700;
+  }
+  &-black{
+    font-weight: 900;
+  }
+}
+/* 文字-斜體 */
+.fst-italic{
+  font-style: italic;
+}
+/* 文字-對齊 */
+.text-center{
+  text-align: center;
+}
+/*文字-顏色*/
+.text-white{
+  color: white;
+}

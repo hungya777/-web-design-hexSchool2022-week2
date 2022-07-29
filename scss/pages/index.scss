@@ -1,0 +1,105 @@
+// *{
+//   outline: 1px solid #000;
+// }
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.title{
+  font-size: $fs-xl;
+  line-height: $lh-xs;
+}
+.header{
+  background-image: url(../img/banner.png);
+  height: 100vh;
+  background-repeat: no-repeat; /*圖片不重複出現*/
+  background-size: cover;  /*圖片自適應區塊大小*/
+  background-position: center; /*圖片位置居中*/
+  margin: 0 auto;
+}
+.header-content{
+  h1{
+    font-size: $fs-xxl;
+    line-height: $lh-s;
+  }
+  .lh-l{
+    line-height: $lh-l;
+  }
+}
+.social-links{
+  :not(:last-child){
+    margin-right: 16px;
+  }
+  li{
+    a img:hover{
+      /*圖片縮放*/
+      transform: scale(1.1, 1.1);
+      transition: all 0.1ms ease;
+    }
+  }
+}
+.about{
+  .profile{
+    li{
+      line-height: $lh-l;
+      &:nth-child(3){
+        line-height: $lh-m;
+      }
+    }
+  }
+  .experience{
+    width: 384px;
+    margin-left: auto;
+    margin-right: auto;
+    li{
+      line-height: $lh-l;
+    }
+  }
+  .dot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before{
+      content: '';
+      @include circle(22px, #891818);
+      margin-right: 16px;
+    }
+  }
+}
+.brand{
+  background: #000000;
+  border: 1px solid #707070;
+  .lh-l{
+    line-height: $lh-l;
+  }
+  .fs-m{
+    font-size: $fs-m;
+  }
+  .brand-pic{
+    gap: 40px 24px; /*gap:上下間距 左右間距*/
+  }
+}
+.works{
+  .fs-m{
+    font-size: $fs-m;
+  }
+  h3{
+    font-size: $fs-m;
+    line-height: $lh-xl;
+  }
+  .posters{
+    gap: 48px 24px;
+  }
+}
+.contact{
+  background: #000000;
+}
+.contact-content{
+  li a{
+    text-decoration: none;
+    &:hover{
+      color: #4682b4;
+    }
+  }
+}
